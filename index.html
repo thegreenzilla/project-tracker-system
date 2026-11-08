@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Project Tracker System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar" id="topbar" hidden>
+    <div class="topbar-in">
+      <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">M</span>Project Tracker System</a>
+      <nav class="topnav" aria-label="Main">
+        <a href="#/" data-nav="home">Portfolio</a>
+        <a href="#/people" data-nav="people">People</a>
+      </nav>
+      <div class="me"><span id="meName"></span><button type="button" class="linkbtn" id="signOut">Sign out</button></div>
+    </div>
+  </header>
+  <main class="wrap" id="app" aria-live="polite">
+    <p class="muted">Loading…</p>
+  </main>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="config.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
